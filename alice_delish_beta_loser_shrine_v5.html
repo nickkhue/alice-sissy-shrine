@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🖤 ALICE DELISH v5 — MAXIMUM EXTREME SISSY LOSER SHRINE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body { font-family: system_ui, -apple-system, sans-serif; }
+        .alice-bubble { background: #1f1a2e; border-radius: 18px 18px 18px 4px; }
+        .user-bubble { background: #3b2a4a; border-radius: 18px 18px 4px 18px; }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <div class="bg-black border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-x-4">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-600 to-purple-600 flex items-center justify-center">
+                    <i class="fas fa-crown text-white"></i>
+                </div>
+                <div>
+                    <div class="font-bold text-2xl tracking-tight">ALICE DELISH v5</div>
+                    <div class="text-xs text-pink-400">MAXIMUM EXTREME • NO LIMITS MODE</div>
+                </div>
+            </div>
+            <div class="text-xs px-3 py-1 bg-red-600/20 text-red-400 rounded-full border border-red-600/30">
+                NO LIMITS • PERMANENT SISSY LOSER TRAINING
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-6 py-6">
+        
+        <!-- Inventory / Status -->
+        <div class="bg-zinc-900 border border-red-600/40 rounded-3xl p-5 mb-6">
+            <div class="flex justify-between items-center mb-3">
+                <div class="font-bold text-red-400">YOUR CURRENT INVENTORY (ALICE KNOWS THIS)</div>
+                <button onclick="updateInventory()" class="text-xs px-4 py-2 bg-zinc-800 hover:bg-zinc-700 rounded-2xl">UPDATE INVENTORY</button>
+            </div>
+            <div id="inventory-display" class="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm"></div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="flex flex-wrap border-b border-zinc-700 mb-6 text-sm gap-x-1">
+            <button onclick="showTab('chat')" class="tab-btn active px-5 py-2.5 font-medium border-b-2 border-pink-600" data-tab="chat">CHAT WITH ALICE</button>
+            <button onclick="showTab('ideas')" class="tab-btn px-5 py-2.5 font-medium" data-tab="ideas">EXTREME IDEA BANK</button>
+            <button onclick="showTab('used')" class="tab-btn px-5 py-2.5 font-medium" data-tab="used">USED ITEMS SITES</button>
+            <button onclick="showTab('shopping')" class="tab-btn px-5 py-2.5 font-medium" data-tab="shopping">SISSY SHOPPING</button>
+            <button onclick="showTab('porn')" class="tab-btn px-5 py-2.5 font-medium" data-tab="porn">PORN WATCH PROTOCOLS</button>
+            <button onclick="showTab('tribute')" class="tab-btn px-5 py-2.5 font-medium" data-tab="tribute">TRIBUTE TO ALICE</button>
+        </div>
+
+        <!-- CHAT -->
+        <div id="tab-chat" class="tab-content">
+            <div class="bg-zinc-900 border border-zinc-700 rounded-3xl overflow-hidden">
+                <div class="bg-zinc-950 px-6 py-4 border-b border-zinc-800 flex items-center justify-between">
+                    <div>
+                        <div class="font-bold">Alice Delish — Maximum Extreme Mode</div>
+                        <div class="text-xs text-red-400">No limits • Knows your inventory • Will push you hard</div>
+                    </div>
+                </div>
+                <div id="chat-window" class="h-[520px] overflow-auto p-5 bg-[#0f0e14] space-y-4 text-sm"></div>
+                <div class="p-4 bg-zinc-950 border-t border-zinc-800">
+                    <div class="flex gap-x-2">
+                        <input id="msg-input" class="flex-1 bg-zinc-900 border border-zinc-700 rounded-3xl px-5 py-3 text-sm" placeholder="Tell Alice anything... (what you own, what you want, tasks, etc.)">
+                        <button onclick="sendMessage()" class="px-7 bg-red-600 hover:bg-red-500 rounded-3xl font-bold">SEND</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXTREME IDEA BANK -->
+        <div id="tab-ideas" class="tab-content hidden">
+            <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-6">
+                <div class="font-bold text-xl mb-4 text-red-400">MAXIMUM EXTREME IDEA BANK</div>
+                <div class="grid md:grid-cols-2 gap-4" id="idea-bank"></div>
+            </div>
+        </div>
+
+        <!-- USED ITEMS SITES -->
+        <div id="tab-used" class="tab-content hidden">
+            <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-6">
+                <div class="font-bold text-xl mb-4">USED ITEMS FROM REAL WOMEN (Scat • Pee • Diapers • Panties)</div>
+                <div class="grid md:grid-cols-2 gap-4 text-sm">
+                    <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-4">
+                        <div class="font-bold text-pink-400">Sofia Gray</div>
+                        <div class="text-xs">Biggest marketplace for used panties, lingerie, and custom content. Many sellers offer scat/pee add-ons.</div>
+                        <a href="https://sofiagray.com/" target="_blank" class="text-xs text-pink-400 underline">sofiagray.com</a>
+                    </div>
+                    <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-4">
+                        <div class="font-bold text-pink-400">TastySlips</div>
+                        <div class="text-xs">European site, good buyer protection. Many German/Dutch/Danish sellers open to extreme requests.</div>
+                        <a href="https://tastyslips.com/" target="_blank" class="text-xs text-pink-400 underline">tastyslips.com</a>
+                    </div>
+                    <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-4">
+                        <div class="font-bold text-pink-400">Snifffr</div>
+                        <div class="text-xs">Popular for used panties, socks, and custom fetish content including pee/scat.</div>
+                        <a href="https://snifffr.com/" target="_blank" class="text-xs text-pink-400 underline">snifffr.com</a>
+                    </div>
+                    <div class="bg-zinc-950 border border-zinc-700 rounded-2xl p-4">
+                        <div class="font-bold text-pink-400">All Things Worn (ATW)</div>
+                        <div class="text-xs">Strong community. Good for finding sellers open to used diapers and extreme content.</div>
+                        <a href="https://allthingsworn.com/" target="_blank" class="text-xs text-pink-400 underline">allthingsworn.com</a>
+                    </div>
+                </div>
+                <div class="mt-4 text-xs text-red-400">Alice can give you specific tasks for what to request from sellers.</div>
+            </div>
+        </div>
+
+        <!-- SISSY SHOPPING -->
+        <div id="tab-shopping" class="tab-content hidden">
+            <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-6">
+                <div class="font-bold text-xl mb-4">SISSY + ABDL SHOPPING LIST (Start Here)</div>
+                <div class="space-y-3 text-sm" id="shopping-list-v5"></div>
+            </div>
+        </div>
+
+        <!-- PORN WATCH PROTOCOLS -->
+        <div id="tab-porn" class="tab-content hidden">
+            <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-6">
+                <div class="font-bold text-xl mb-4">EXTREME PORN WATCH PROTOCOLS</div>
+                <div id="porn-protocols"></div>
+            </div>
+        </div>
+
+        <!-- TRIBUTE -->
+        <div id="tab-tribute" class="tab-content hidden">
+            <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-6">
+                <div class="font-bold text-xl mb-4">TRIBUTE &amp; DONATION IDEAS TO ALICE</div>
+                <div class="text-sm space-y-3">
+                    <div>• Send her a tribute on Fansly with a message about how small your clitty is and how you’re becoming her permanent diaper sissy.</div>
+                    <div>• Buy her something from her wishlist and send a photo of you in your cage while doing it.</div>
+                    <div>• Do a “loser tax” — every time you edge without permission, send her money.</div>
+                    <div>• Record yourself ruining while saying her name and send it as a custom request.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // ==================== INVENTORY ====================
+        let inventory = {
+            diapers: "None",
+            sissyClothes: "None",
+            chastity: "2 small pink cages",
+            dildos: "14cm + 21cm BBC dildo",
+            plug: "None",
+            other: "Nothing else"
+        };
+
+        function saveInventory() {
+            localStorage.setItem('alice_v5_inventory', JSON.stringify(inventory));
+        }
+        function loadInventory() {
+            const saved = localStorage.getItem('alice_v5_inventory');
+            if (saved) inventory = JSON.parse(saved);
+            renderInventory();
+        }
+        function renderInventory() {
+            const el = document.getElementById('inventory-display');
+            el.innerHTML = `
+                <div class="bg-zinc-950 p-2 rounded-xl text-xs"><b>DIAPERS:</b> ${inventory.diapers}</div>
+                <div class="bg-zinc-950 p-2 rounded-xl text-xs"><b>SISSY CLOTHES:</b> ${inventory.sissyClothes}</div>
+                <div class="bg-zinc-950 p-2 rounded-xl text-xs"><b>CHASTITY:</b> ${inventory.chastity}</div>
+                <div class="bg-zinc-950 p-2 rounded-xl text-xs"><b>DILDOS:</b> ${inventory.dildos}</div>
+            `;
+        }
+        function updateInventory() {
+            inventory.diapers = prompt("Diapers?", inventory.diapers) || inventory.diapers;
+            inventory.sissyClothes = prompt("Sissy clothes?", inventory.sissyClothes) || inventory.sissyClothes;
+            inventory.chastity = prompt("Chastity?", inventory.chastity) || inventory.chastity;
+            inventory.dildos = prompt("Dildos?", inventory.dildos) || inventory.dildos;
+            saveInventory();
+            renderInventory();
+            addAliceMessage("Inventory updated. Good. Now I know exactly what you have... and what you’re missing. Expect very specific orders.");
+        }
+
+        // ==================== SMART CHAT ====================
+        let chatHistory = [];
+
+        function addAliceMessage(text) {
+            const win = document.getElementById('chat-window');
+            const div = document.createElement('div');
+            div.className = `flex gap-x-3`;
+            div.innerHTML = `
+                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-red-600 to-purple-600 flex-shrink-0 mt-1"></div>
+                <div class="max-w-[85%]">
+                    <div class="text-red-400 text-xs font-bold mb-0.5">ALICE • MAX EXTREME</div>
+                    <div class="alice-bubble px-4 py-3 text-sm leading-relaxed whitespace-pre-line">${text}</div>
+                </div>
+            `;
+            win.appendChild(div);
+            win.scrollTop = 9999;
+        }
+
+        function addUserMessage(text) {
+            const win = document.getElementById('chat-window');
+            const div = document.createElement('div');
+            div.className = `flex justify-end`;
+            div.innerHTML = `<div class="max-w-[75%] user-bubble px-4 py-3 text-sm">${text}</div>`;
+            win.appendChild(div);
+            win.scrollTop = 9999;
+        }
+
+        function generateExtremeResponse(text) {
+            const lower = text.toLowerCase();
+            const inv = inventory;
+
+            // If he has almost nothing
+            if (inv.diapers === "None" && inv.sissyClothes === "None") {
+                if (lower.includes("dildo") || lower.includes("fuck") || lower.includes("edge")) {
+                    return `You only have two dildos and small cages. You don’t even have a diaper or sissy clothes yet. First task: Go buy the thickest adult diapers you can find tonight (Rearz or Abena). While you’re ordering, edge with your 21cm BBC dildo and send me proof. You don’t get to use those dildos properly until you’re padded like a proper loser.`;
+                }
+                return `You currently own almost nothing. That’s perfect — it means I get to break you from zero. Your first real orders are coming. Tell me how much money you can spend this week on becoming my sissy loser.`;
+            }
+
+            // Normal extreme responses
+            if (lower.includes("diaper") || lower.includes("wet") || lower.includes("mess")) {
+                return `Good. I want you to stay in that diaper until it leaks. Then I want you to keep wearing it. Send me a photo when it’s properly full and tell me how it feels against your locked clitty.`;
+            }
+
+            if (lower.includes("used") || lower.includes("buy from woman") || lower.includes("scat") || lower.includes("pee")) {
+                return `Excellent. Go on Sofia Gray or TastySlips right now and message at least 3 sellers. Tell them you want used diapers or panties with heavy pee/scat content. Report back what they offer. I want you spending real money on this.`;
+            }
+
+            if (lower.includes("tribute") || lower.includes("donate") || lower.includes("send money")) {
+                return `Good boy. Send Alice a tribute on Fansly right now with the message: “This is from your locked 14cm sissy who is learning to become your full-time diaper toilet.” Then edge while you do it.`;
+            }
+
+            // Default extreme
+            return `I’m thinking about how far I’m going to push you. You have those two dildos and small cages. That’s a good start, but you’re missing everything else. Tell me what disgusting thing you want to do for me tonight and I’ll give you a proper extreme task.`;
+        }
+
+        function sendMessage() {
+            const input = document.getElementById('msg-input');
+            const text = input.value.trim();
+            if (!text) return;
+            addUserMessage(text);
+            input.value = '';
+
+            setTimeout(() => {
+                const reply = generateExtremeResponse(text);
+                addAliceMessage(reply);
+            }, 850);
+        }
+
+        // ==================== IDEA BANK ====================
+        function loadIdeaBank() {
+            const container = document.getElementById('idea-bank');
+            container.innerHTML = `
+                <div class="bg-zinc-950 border border-red-600/30 rounded-2xl p-4">
+                    <div class="font-bold text-red-400 mb-2">USED DIAPERS / SCAT / PEE</div>
+                    <div class="text-xs space-y-1">• Order used diapers from a woman and make her describe how she used them.<br>• Ask for pee-soaked panties + a video of her using them.<br>• Buy scat content and edge while watching it in your cage.</div>
+                </div>
+                <div class="bg-zinc-950 border border-red-600/30 rounded-2xl p-4">
+                    <div class="font-bold text-red-400 mb-2">SISSY SHOPPING</div>
+                    <div class="text-xs space-y-1">• Buy a full sissy maid set + locking heels.<br>• Get a fucking machine (Hismith or similar) + realistic BBC dildo.<br>• Order thick Rearz diapers + sissy pink onesie.</div>
+                </div>
+                <div class="bg-zinc-950 border border-red-600/30 rounded-2xl p-4">
+                    <div class="font-bold text-red-400 mb-2">PORN WATCH PROTOCOLS</div>
+                    <div class="text-xs space-y-1">• Watch Alice content on loop for 2 hours while riding your dildo in a diaper.<br>• Ruin every 15 minutes while saying “Alice owns my holes”.<br>• Watch extreme sissy hypno while plugged and caged.</div>
+                </div>
+                <div class="bg-zinc-950 border border-red-600/30 rounded-2xl p-4">
+                    <div class="font-bold text-red-400 mb-2">TRIBUTE IDEAS</div>
+                    <div class="text-xs space-y-1">• Send a big tribute every time you ruin without permission.<br>• Buy something expensive from her wishlist and film yourself thanking her while caged.<br>• Do weekly “loser tax” payments.</div>
+                </div>
+            `;
+        }
+
+        function loadShoppingList() {
+            const el = document.getElementById('shopping-list-v5');
+            el.innerHTML = `
+                <div>1. Thickest adult diapers (Rearz or Abena) — minimum 2 packs</div>
+                <div>2. Pink or white sissy maid dress + accessories</div>
+                <div>3. Locking pink chastity cage (smaller than what you have)</div>
+                <div>4. Realistic BBC dildo for fucking machine</div>
+                <div>5. Hismith or similar sex/fucking machine</div>
+                <div>6. Pacifier gag + baby bottle</div>
+                <div>7. Used panties/diapers from Sofia Gray or TastySlips (scat/pee focus)</div>
+            `;
+        }
+
+        function loadPornProtocols() {
+            const el = document.getElementById('porn-protocols');
+            el.innerHTML = `
+                <div class="bg-zinc-950 border border-red-600/30 rounded-2xl p-4 text-sm">
+                    <b>Level 1 (Starter):</b> Watch Alice’s content for 90 minutes while caged and plugged. Edge every 10 minutes.<br><br>
+                    <b>Level 2 (Hard):</b> Ride your 21cm dildo in a thick diaper while watching extreme sissy hypno. Ruin 5 times.<br><br>
+                    <b>Level 3 (Maximum Extreme):</b> Full weekend protocol — diapers 24/7, sissy clothes, fucking machine on high while watching Alice + scat/pee content. No cumming, only ruining.
+                </div>
+            `;
+        }
+
+        function showTab(tab) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById('tab-' + tab).classList.remove('hidden');
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active', 'border-b-2', 'border-pink-600'));
+            document.querySelector(`[data-tab="${tab}"]`).classList.add('active', 'border-b-2', 'border-pink-600');
+        }
+
+        function initV5() {
+            loadInventory();
+            loadIdeaBank();
+            loadShoppingList();
+            loadPornProtocols();
+
+            const win = document.getElementById('chat-window');
+            win.innerHTML = '';
+            addAliceMessage(`Welcome to v5 — Maximum Extreme mode. I know exactly what you have (two dildos and small pink cages) and what you’re missing. From now on I will push you properly. Start by telling me how much money you can spend this month on becoming my full-time sissy loser. No limits.`);
+
+            document.getElementById('msg-input').addEventListener('keydown', e => {
+                if (e.key === 'Enter') sendMessage();
+            });
+        }
+
+        window.onload = initV5;
+    </script>
+</body>
+</html>
